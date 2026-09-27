@@ -1,0 +1,301 @@
+/* ===================================================================
+   PRINT STYLESHEET - MUHAMMAD RAYHAN FADILA CV
+   Optimized for A4 paper and Print-to-PDF
+   =================================================================== */
+
+@media print {
+  *, *::before, *::after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  @page {
+    margin: 1.2cm;
+    size: A4 portrait;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', Arial, sans-serif !important;
+    font-size: 10pt !important;
+    line-height: 1.45 !important;
+    background: #ffffff !important;
+    color: #111827 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Hide interactive / web-only elements */
+  .navbar,
+  .ambient-bg,
+  .ambient-orb,
+  .btn,
+  .btn-nav-cta,
+  .btn-icon,
+  .mobile-toggle,
+  .floating-chip,
+  .profile-card-glow,
+  .data-copy-btn,
+  .contact-interactive-box,
+  .toast-container,
+  .back-to-top,
+  .footer-links {
+    display: none !important;
+  }
+
+  /* Reset layout constraints */
+  .container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  section {
+    padding: 1.2rem 0 !important;
+    page-break-inside: avoid;
+  }
+
+  /* Hero Section Print Layout */
+  .hero-section {
+    padding-top: 0 !important;
+    border-bottom: 2px solid #e5a93c !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  .hero-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    gap: 2rem !important;
+  }
+
+  .hero-content {
+    flex: 1 !important;
+  }
+
+  .hero-status-badge {
+    border: 1px solid #10b981 !important;
+    padding: 0.2rem 0.6rem !important;
+    font-size: 8pt !important;
+  }
+
+  .hero-title {
+    font-size: 22pt !important;
+    font-weight: 800 !important;
+    margin-bottom: 0.2rem !important;
+    color: #0f172a !important;
+  }
+
+  .gold-gradient-text {
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
+    color: #b47a16 !important;
+  }
+
+  .hero-subtitle {
+    font-size: 11pt !important;
+    color: #4b5563 !important;
+    margin-bottom: 0.8rem !important;
+  }
+
+  .hero-description {
+    font-size: 9.5pt !important;
+    color: #374151 !important;
+    margin-bottom: 1rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .hero-visual {
+    width: 120px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .profile-card-wrapper {
+    max-width: 120px !important;
+  }
+
+  .profile-card {
+    border: 1px solid #d1d5db !important;
+    border-radius: 8px !important;
+  }
+
+  .profile-image-container {
+    aspect-ratio: 1 !important;
+    height: 140px !important;
+  }
+
+  .profile-image {
+    display: block !important;
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+
+  .profile-card-info,
+  .profile-card-badge-top {
+    display: none !important;
+  }
+
+  .hero-quick-stats {
+    display: none !important;
+  }
+
+  /* Section Titles */
+  .section-header {
+    text-align: left !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .section-tag {
+    font-size: 8pt !important;
+    padding: 0.2rem 0.5rem !important;
+    border: 1px solid #d1d5db !important;
+  }
+
+  .section-title {
+    font-size: 14pt !important;
+    margin-bottom: 0.3rem !important;
+    border-bottom: 1px solid #e5e7eb !important;
+    padding-bottom: 0.3rem !important;
+  }
+
+  .section-subtitle {
+    font-size: 9pt !important;
+  }
+
+  /* Profile Quote / Ringkasan */
+  .profile-quote-card {
+    padding: 1rem 1.25rem !important;
+    border: 1px solid #e5e7eb !important;
+    margin-bottom: 1.25rem !important;
+    background: #f9fafb !important;
+  }
+
+  .quote-highlight {
+    font-size: 10pt !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  /* Pillars Grid */
+  .pillars-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.75rem !important;
+  }
+
+  .pillar-card {
+    padding: 0.85rem !important;
+    border: 1px solid #e5e7eb !important;
+  }
+
+  .pillar-icon-box {
+    display: none !important;
+  }
+
+  .pillar-title {
+    font-size: 10pt !important;
+    margin-bottom: 0.2rem !important;
+  }
+
+  .pillar-desc {
+    font-size: 8.5pt !important;
+  }
+
+  /* Personal Data Grid */
+  .personal-data-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.6rem !important;
+  }
+
+  .data-card {
+    padding: 0.6rem 0.8rem !important;
+    border: 1px solid #e5e7eb !important;
+  }
+
+  .data-icon {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .data-label {
+    font-size: 7.5pt !important;
+  }
+
+  .data-value {
+    font-size: 9pt !important;
+  }
+
+  /* Education */
+  .timeline-card {
+    padding: 1.25rem !important;
+    border: 1px solid #e5e7eb !important;
+  }
+
+  .institution-name {
+    font-size: 12pt !important;
+  }
+
+  .institution-major {
+    font-size: 10pt !important;
+  }
+
+  .curriculum-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.5rem !important;
+  }
+
+  .curriculum-item {
+    padding: 0.5rem !important;
+    border: 1px solid #e5e7eb !important;
+  }
+
+  /* Skills */
+  .skills-layout {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+  }
+
+  .skill-category-box {
+    padding: 1rem !important;
+    border: 1px solid #e5e7eb !important;
+  }
+
+  .skill-progress-bar {
+    border: 1px solid #d1d5db !important;
+    height: 6px !important;
+  }
+
+  .skill-progress-fill {
+    background: #4b5563 !important;
+  }
+
+  /* Contact Section */
+  .contact-card-main {
+    grid-template-columns: 1fr !important;
+    padding: 1.25rem !important;
+    border: 1px solid #e5e7eb !important;
+    gap: 1rem !important;
+  }
+
+  .contact-methods {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.75rem !important;
+  }
+
+  .method-item {
+    border: 1px solid #e5e7eb !important;
+    padding: 0.6rem !important;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 1rem 0 !important;
+    border-top: 1px solid #e5e7eb !important;
+  }
+}
